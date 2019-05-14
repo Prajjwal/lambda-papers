@@ -1,0 +1,65 @@
+---
+---
+
+@import "minima";
+
+body {
+  font-family: "Georgia", "Droid Serif", serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: rgba(66, 61, 54, 1);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 1.0rem;
+    line-height: 1.8rem;
+  }
+}
+
+code, pre {
+  font-family: "Hack", monospace;
+}
+
+.site-header {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2.8rem;
+  color: rgb(120, 39, 9);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr, li {
+  margin: 0.75rem 0;
+}
+
+blockquote {
+  color: rgba(0, 0, 0, 0.6);
+  border-left: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+a {
+  border-bottom: 3px solid;
+  border-color: rgba(0, 50, 149, 0.6);
+  transition: border-color 0.3s ease-in;
+}
+
+a:hover, a:visited {
+  border-color: rgba(0, 50, 149, 0.8);
+}
+
+a, a:hover, a:visited {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.site-header a, .home .post-list a {
+  border: none;
+}

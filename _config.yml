@@ -1,0 +1,17 @@
+title: λ Lambda Papers
+email: sin@prajjwal.com
+description: >
+  On Programming, Linux, Computer Science, and Mathematics. Curated with λove by an imposter.
+baseurl: ""
+url: "https://lambdapapers.com"
+twitter_username: prajjwalsin
+github_username:  Prajjwal
+google_analytics: UA-101926020-1
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
