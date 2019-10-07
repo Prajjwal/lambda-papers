@@ -1,7 +1,7 @@
 title: λ Lambda Papers
 email: sin@prajjwal.com
 description: >
-  On Programming, Linux, Computer Science, and Mathematics. Curated with λove by an imposter.
+  On Programming, Linux, Computer Science, and Mathematics. Curated with λove by an impostor.
 baseurl: ""
 url: "https://lambdapapers.com"
 twitter_username: prajjwalsin
@@ -10,7 +10,7 @@ google_analytics: UA-101926020-1
 
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
