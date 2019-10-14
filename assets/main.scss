@@ -25,9 +25,13 @@ code, pre {
   font-size: 1rem;
 }
 
+.post-title {
+  font-size: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.8rem;
-  color: rgb(120, 39, 9);
+  color: #476A7F;
 }
 
 hr {
@@ -47,12 +51,13 @@ blockquote {
 
 a {
   border-bottom: 3px solid;
-  border-color: rgba(0, 50, 149, 0.6);
+  border-color: #6EC9FF;
   transition: border-color 0.3s ease-in;
 }
 
 a:hover, a:visited {
-  border-color: rgba(0, 50, 149, 0.8);
+  border-color: #5D737F;
+  text-decoration: none;
 }
 
 a, a:hover, a:visited {
@@ -60,6 +65,18 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 
+.post-content {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .site-header a, .home .post-list a {
   border: none;
+}
+
+.highlight {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.25rem;
 }
