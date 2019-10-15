@@ -57,14 +57,15 @@ sleep 10
 print_file_contents(file)
 ```
 
-The script acquires an exclusive lock and writes its `PID` to it. The lock
-acquisition is skipped if you pass in `no_lock` as the first command line
-parameter. If you open two terminal and run `ruby flock.rb` in each, you will
-find that the process that starts second simply blocks until the first process
-exists, and therefore each process prints out exactly what *it* wrote to the
-file last. Now do that again, but invoke the second process as follows `ruby
-flock.rb no_lock`. You'll find that *process_2* doesn't hesitate writing its
-`PID` to the file, even though *process_1* is holding an exclusive lock on it!
+The script acquires an exclusive lock(there's also shared locks) and writes its
+`PID` to it. The lock acquisition is skipped if you pass in `no_lock` as the
+first command line parameter. If you open two terminal and run `ruby flock.rb`
+in each, you will find that the process that starts second simply blocks until
+the first process exists, and therefore each process prints out exactly what
+*it* wrote to the file last. Now do that again, but invoke the second process as
+follows `ruby flock.rb no_lock`. You'll find that *process_2* doesn't hesitate
+writing its `PID` to the file, even though *process_1* is holding an exclusive
+lock on it!
 
 In practice, you would never see this because cooperating processes involved
 would go through the correct `flock()` api.  Therefore, a few of you might find

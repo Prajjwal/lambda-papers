@@ -1,5 +1,6 @@
 title: λ Lambda Papers
 email: sin@prajjwal.com
+author: Prajjwal Singh
 description: >
   On Programming, Linux, Computer Science, and Mathematics. Curated with λove by an impostor.
 baseurl: ""
@@ -12,6 +13,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+feed:
+  path: atom.xml
 exclude:
   - Gemfile
   - Gemfile.lock
