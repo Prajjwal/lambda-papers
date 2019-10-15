@@ -3,7 +3,7 @@ layout: post
 title: Exploring Linux File Locking Mechanisms in Ruby
 ---
 
-*An exploration of File Locking mechanisms and their pitalls on Linux in Ruby.*
+*An exploration of File Locking mechanisms and their pitfalls on Linux in Ruby.*
 
 On a recent automation spree I produced a couple of hundred lines of ruby that
 needed persistence. The built-in `PStore` is a natural choice for a project that
@@ -63,7 +63,7 @@ parameter. If you open two terminal and run `ruby flock.rb` in each, you will
 find that the process that starts second simply blocks until the first process
 exists, and therefore each process prints out exactly what *it* wrote to the
 file last. Now do that again, but invoke the second process as follows `ruby
-flock.rb no_lock`. You'll find that *process_2* doesn't hesistate writing its
+flock.rb no_lock`. You'll find that *process_2* doesn't hesitate writing its
 `PID` to the file, even though *process_1* is holding an exclusive lock on it!
 
 In practice, you would never see this because cooperating processes involved
@@ -150,8 +150,8 @@ It is possible to issue a mandatory lock with `fcntl()`.
 ## Playing Nice With External Processes
 
 Since `File#flock` uses `flock(2)` under the hood, it stands to reason that we
-can make it play nice with other non ruby proccesses as well. The following
-(incomplete) C program plays nice with our `flock.rb`.
+can cooperate with other non ruby processes. The following C program plays nice
+with our `flock.rb`.
 
 ```c
 #include <sys/file.h>
