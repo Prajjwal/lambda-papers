@@ -60,7 +60,7 @@ print_file_contents(file)
 The script acquires an exclusive lock and writes its `PID` to it. The lock
 acquisition is skipped if you pass in `no_lock` as the first command line
 parameter. If you open two terminal and run `ruby flock.rb` in each, you will
-ind that the process that starts second simply blocks until the first process
+find that the process that starts second simply blocks until the first process
 exists, and therefore each process prints out exactly what *it* wrote to the
 file last. Now do that again, but invoke the second process as follows `ruby
 flock.rb no_lock`. You'll find that *process_2* doesn't hesistate writing its
@@ -81,7 +81,7 @@ defines it as follows:
 
 Aha! So `File#flock` actually issues an advisory lock, which means that other
 processes are free to ignore the locking protocol if they so desire. Advisory
-locking are in contrast to *mandatory locking*, which prevents this sort of
+locking is in contrast to *mandatory locking*, which prevents this sort of
 thing from happening. Some environments, notably Windows(!), have certain
 types of locks enforced by the filesystem by default! Ruby's file locking
 inherits all of `flock(2)`'s flaws:
