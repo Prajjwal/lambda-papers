@@ -6,7 +6,7 @@ description: >
 baseurl: ""
 url: "https://lambdapapers.com"
 twitter_username: prajjwalsin
-github_username:  Prajjwal
+github_username:  prajjwal
 google_analytics: UA-101926020-1
 
 markdown: kramdown
