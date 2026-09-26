@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Exploring Linux File Locking Mechanisms in Ruby
+date: 2019-10-14
 ---
 
 *An exploration of File Locking mechanisms and their pitfalls on Linux in Ruby.*
