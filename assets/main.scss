@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2.8rem;
 }
 
+h2 {
+  font-size: 1.5rem; // smaller headings
+}
+
+
 // Default quotes are too light, darken
 blockquote {
   color: $gray;
@@ -66,12 +71,6 @@ a:hover, a:visited {
   border: none;
 }
 // ]
-
-.post-content {
-  h2 {
-    font-size: 1.5rem; // smaller post subtitles
-  }
-}
 
 .highlight {
   margin-top: 2rem;
