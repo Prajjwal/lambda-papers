@@ -3,18 +3,16 @@ email: sin@prajjwal.com
 author: Prajjwal Singh
 description: >
   On Programming, Linux, Computer Science, and Mathematics. Curated with λove by an impostor.
-baseurl: ""
 url: "https://lambdapapers.com"
 twitter_username: prajjwalsin
 github_username:  prajjwal
-google_analytics: UA-101926020-1
+rss: rss
 
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-feed:
-  path: atom.xml
 exclude:
+  - bin
   - Gemfile
   - Gemfile.lock
